@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Motors — автосалон</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Размытые цветные пятна-свечения на фоне -->
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
+
+  <!-- Шапка: логотип + вкладки брендов -->
+  <header class="header">
+    <a class="logo" href="#">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">Apex <span>Motors</span></span>
+    </a>
+
+    <nav class="tabs">
+      <button class="tab active" data-brand="mercedes">Mercedes</button>
+      <button class="tab" data-brand="bmw">BMW</button>
+      <button class="tab" data-brand="porsche">Porsche</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Коллекция 2026</p>
+        <h1 class="section-title">Mercedes-Benz</h1>
+      </div>
+      <p class="section-count"></p>
+    </div>
+
+    <!-- Сюда renderCards() вставляет карточки -->
+    <div class="cards"></div>
+  </main>
+
+  <!-- Окно с деталями автомобиля: заполняется в openModal() -->
+  <div class="modal" id="modal">
+    <div class="modal-window" id="modal-window" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" id="modal-close" aria-label="Закрыть">&times;</button>
+
+      <div class="modal-image">
+        <img id="modal-img" alt="">
+      </div>
+
+      <div class="modal-info">
+        <p class="modal-eyebrow" id="modal-brand"></p>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-price" id="modal-price"></p>
+        <p class="modal-desc" id="modal-desc"></p>
+
+        <p class="modal-stock">
+          <span class="stock-dot"></span>
+          В наличии: <b id="modal-count"></b>
+        </p>
+
+        <p class="modal-color-label">Цвет: <span id="modal-color-name"></span></p>
+        <div class="colors" id="modal-colors"></div>
+
+        <button class="btn btn-big" id="modal-order">Заказать</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Сначала Axios, потом свой скрипт — иначе «axios is not defined» -->
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.20.0/dist/axios.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
