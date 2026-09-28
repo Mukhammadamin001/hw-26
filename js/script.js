@@ -13,6 +13,8 @@ const brandNames = {
 
 // Названия цветов для подписи «Цвет: ...» в окне деталей
 const colorNames = {
+  '#5A716B': 'Emerald Green',
+  '#748780': 'Sage Green',
   '#0B0B0D': 'Obsidian Black',
   '#C7C9CC': 'Iridium Silver',
   '#2E3A4E': 'Nautic Blue',
@@ -162,8 +164,15 @@ function openModal(brand, index) {
               aria-label="${getColorName(color)}"
               onclick="selectColor(${i})"></button>
     `;
+
+    // Заранее загружаем фото в этом цвете, чтобы переключение было мгновенным
+    const photo = getColorImage(car, color);
+    if (photo) {
+      new Image().src = photo;
+    }
   }
 
+  document.getElementById('modal-img').classList.remove('switching');
   document.getElementById('modal-img').src = car.image;
   document.getElementById('modal-img').alt = car.title;
   document.getElementById('modal-brand').textContent = brandNames[brand] + ' · 2026';
@@ -182,14 +191,35 @@ function openModal(brand, index) {
 
 function selectColor(index) {
   const dots = document.querySelectorAll('.color-dot');
+  const color = currentCar.availableColors[index];
 
   for (let i = 0; i < dots.length; i++) {
     dots[i].classList.remove('active');
   }
   dots[index].classList.add('active');
 
-  document.getElementById('modal-color-name').textContent =
-    getColorName(currentCar.availableColors[index]);
+  document.getElementById('modal-color-name').textContent = getColorName(color);
+
+  // Если есть фото машины в этом цвете — показываем его
+  const photo = getColorImage(currentCar, color);
+  const img = document.getElementById('modal-img');
+
+  if (photo && img.getAttribute('src') !== photo) {
+    img.classList.add('switching');   // короткое затухание
+    img.onload = function () {
+      img.classList.remove('switching');
+    };
+    img.onerror = img.onload;
+    img.src = photo;
+  }
+}
+
+// Фото из поля colorImages ({ "#цвет": "путь" }); у машин без него — null
+function getColorImage(car, color) {
+  if (car.colorImages && car.colorImages[color]) {
+    return car.colorImages[color];
+  }
+  return null;
 }
 
 function closeModal() {
