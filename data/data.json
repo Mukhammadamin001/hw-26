@@ -75,42 +75,70 @@
     {
       "title": "BMW X5 xDrive40i",
       "price": 89000,
-      "image": "images/bmw-x5.png",
+      "image": "images/bmw-x5-black.png",
       "description": "Кроссовер, с которого начался сегмент SAV. Рядная «шестёрка», пневмоподвеска и фирменная управляемость BMW в кузове для всей семьи.",
       "count": 5,
-      "availableColors": ["#0B0B0D", "#1C2A45", "#C7C9CC", "#F4F5F6"]
+      "availableColors": ["#0B0B0D", "#1C2A45", "#C7C9CC", "#F4F5F6"],
+      "colorImages": {
+        "#0B0B0D": "images/bmw-x5-black.png",
+        "#1C2A45": "images/bmw-x5-blue.png",
+        "#C7C9CC": "images/bmw-x5-silver.png",
+        "#F4F5F6": "images/bmw-x5-white.png"
+      }
     },
     {
       "title": "BMW M4 Competition",
       "price": 102000,
-      "image": "images/bmw-m4.png",
+      "image": "images/bmw-m4-white.png",
       "description": "Купе для трек-дней и городских понтов одновременно. 510 л.с., задний привод с режимом дрифта и решётка, о которой спорит весь интернет.",
       "count": 2,
-      "availableColors": ["#2E5BFF", "#0B0B0D", "#3A9B5C"]
+      "availableColors": ["#F4F5F6", "#2E5BFF", "#0B0B0D", "#3A9B5C"],
+      "colorImages": {
+        "#F4F5F6": "images/bmw-m4-white.png",
+        "#2E5BFF": "images/bmw-m4-blue.png",
+        "#0B0B0D": "images/bmw-m4-black.png",
+        "#3A9B5C": "images/bmw-m4-green.png"
+      }
     },
     {
       "title": "BMW 740d xDrive",
       "price": 134000,
-      "image": "images/bmw-740d.png",
+      "image": "images/bmw-740d-silver.png",
       "description": "Представительский седан новой эры: театральный экран 31 дюйм для задних пассажиров, автоматические двери и дизель, расходующий меньше компактного хэтчбека.",
       "count": 3,
-      "availableColors": ["#0B0B0D", "#2E3A4E", "#C7C9CC"]
+      "availableColors": ["#C7C9CC", "#0B0B0D", "#2E3A4E"],
+      "colorImages": {
+        "#C7C9CC": "images/bmw-740d-silver.png",
+        "#0B0B0D": "images/bmw-740d-black.png",
+        "#2E3A4E": "images/bmw-740d-blue.png"
+      }
     },
     {
       "title": "BMW X6 M Competition",
       "price": 145000,
-      "image": "images/bmw-x6m.png",
+      "image": "images/bmw-x6m-white.png",
       "description": "Купе-кроссовер с мотором от суперкара: 625 л.с., 4.1 секунды до сотни. Практичность здесь принесена в жертву стилю — и владельцы не жалеют.",
       "count": 2,
-      "availableColors": ["#1C2A45", "#0B0B0D", "#5B5D5F"]
+      "availableColors": ["#F4F5F6", "#1C2A45", "#0B0B0D", "#5B5D5F"],
+      "colorImages": {
+        "#F4F5F6": "images/bmw-x6m-white.png",
+        "#1C2A45": "images/bmw-x6m-blue.png",
+        "#0B0B0D": "images/bmw-x6m-black.png",
+        "#5B5D5F": "images/bmw-x6m-grey.png"
+      }
     },
     {
       "title": "BMW iX xDrive50",
       "price": 98000,
-      "image": "images/bmw-ix.png",
+      "image": "images/bmw-ix-white.png",
       "description": "Электрический флагман с запасом хода 630 км. Салон из переработанных материалов, стеклянная крыша с электрозатемнением и разгон без единого звука.",
       "count": 4,
-      "availableColors": ["#4A4E52", "#F4F5F6", "#2E3A4E"]
+      "availableColors": ["#F4F5F6", "#4A4E52", "#2E3A4E"],
+      "colorImages": {
+        "#F4F5F6": "images/bmw-ix-white.png",
+        "#4A4E52": "images/bmw-ix-grey.png",
+        "#2E3A4E": "images/bmw-ix-blue.png"
+      }
     }
   ],
   "porsche": [
