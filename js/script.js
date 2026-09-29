@@ -31,7 +31,8 @@ const colorNames = {
   '#F2C230': 'Racing Yellow',
   '#3A2E4E': 'Amethyst Grey',
   '#1C4532': 'British Racing Green',
-  '#4E9BB8': 'Frozen Blue'
+  '#4E9BB8': 'Frozen Blue',
+  '#BBC2C9': 'Ice Grey'
 };
 
 

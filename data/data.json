@@ -145,42 +145,72 @@
     {
       "title": "Porsche 911 Carrera S",
       "price": 142000,
-      "image": "images/porsche-911.png",
+      "image": "images/porsche-911-silver.png",
       "description": "Икона спорткаров, не меняющая силуэт 60 лет. Оппозитный мотор за задней осью, 450 л.с. и управляемость, по которой калибруют все остальные машины мира.",
       "count": 2,
-      "availableColors": ["#C7352E", "#0B0B0D", "#F4F5F6", "#F2C230"]
+      "availableColors": ["#BBC2C9", "#C7352E", "#0B0B0D", "#F4F5F6", "#F2C230"],
+      "colorImages": {
+        "#BBC2C9": "images/porsche-911-silver.png",
+        "#C7352E": "images/porsche-911-red.png",
+        "#0B0B0D": "images/porsche-911-black.png",
+        "#F4F5F6": "images/porsche-911-white.png",
+        "#F2C230": "images/porsche-911-yellow.png"
+      }
     },
     {
       "title": "Porsche Cayenne Turbo",
       "price": 156000,
-      "image": "images/porsche-cayenne.png",
+      "image": "images/porsche-cayenne-white.png",
       "description": "Кроссовер, который ездит быстрее многих спорткаров. Битурбо V8 на 550 л.с., карбоновая крыша и пять посадочных мест для семейных поездок на 300 км/ч.",
       "count": 3,
-      "availableColors": ["#0B0B0D", "#C7C9CC", "#2E3A4E"]
+      "availableColors": ["#F4F5F6", "#0B0B0D", "#C7C9CC", "#2E3A4E"],
+      "colorImages": {
+        "#F4F5F6": "images/porsche-cayenne-white.png",
+        "#0B0B0D": "images/porsche-cayenne-black.png",
+        "#C7C9CC": "images/porsche-cayenne-silver.png",
+        "#2E3A4E": "images/porsche-cayenne-blue.png"
+      }
     },
     {
       "title": "Porsche Panamera 4S",
       "price": 129000,
-      "image": "images/porsche-panamera.png",
+      "image": "images/porsche-panamera-white.png",
       "description": "Четырёхдверный спорткар для тех, кто не готов выбирать между 911 и седаном. Задние управляемые колёса и посадка ниже, чем у иных купе.",
       "count": 4,
-      "availableColors": ["#3A2E4E", "#0B0B0D", "#C7C9CC"]
+      "availableColors": ["#F4F5F6", "#3A2E4E", "#0B0B0D", "#C7C9CC"],
+      "colorImages": {
+        "#F4F5F6": "images/porsche-panamera-white.png",
+        "#3A2E4E": "images/porsche-panamera-purple.png",
+        "#0B0B0D": "images/porsche-panamera-black.png",
+        "#C7C9CC": "images/porsche-panamera-silver.png"
+      }
     },
     {
       "title": "Porsche Macan GTS",
       "price": 87000,
-      "image": "images/porsche-macan.png",
+      "image": "images/porsche-macan-white.png",
       "description": "Самый доступный способ войти в мир Porsche — и самый популярный. Компактный кроссовер с повадками хот-хэтча и фирменным звуком выхлопа Sport Chrono.",
       "count": 7,
-      "availableColors": ["#1C4532", "#0B0B0D", "#F4F5F6", "#C7352E"]
+      "availableColors": ["#F4F5F6", "#1C4532", "#0B0B0D", "#C7352E"],
+      "colorImages": {
+        "#F4F5F6": "images/porsche-macan-white.png",
+        "#1C4532": "images/porsche-macan-green.png",
+        "#0B0B0D": "images/porsche-macan-black.png",
+        "#C7352E": "images/porsche-macan-red.png"
+      }
     },
     {
       "title": "Porsche Taycan Turbo S",
       "price": 187000,
-      "image": "images/porsche-taycan.png",
+      "image": "images/porsche-taycan-white.png",
       "description": "Электрический Porsche, доказавший, что будущее звучит тихо, но едет громко: 761 л.с., 2.8 секунды до сотни и зарядка на 100 км за пять минут.",
       "count": 1,
-      "availableColors": ["#4E9BB8", "#F4F5F6", "#0B0B0D"]
+      "availableColors": ["#F4F5F6", "#4E9BB8", "#0B0B0D"],
+      "colorImages": {
+        "#F4F5F6": "images/porsche-taycan-white.png",
+        "#4E9BB8": "images/porsche-taycan-blue.png",
+        "#0B0B0D": "images/porsche-taycan-black.png"
+      }
     }
   ]
 }
